@@ -1,0 +1,16 @@
+{
+  "framework": "react",
+  "description": "Basic CRUD functionality with React",
+  "targetPaths": [
+    {
+      "source": "files/components/CrudForm.js",
+      "destination": "src/components/CrudForm.js"
+    }
+  ],
+  "dependencies": [
+    "axios"
+  ],
+  "postInstall": [
+    "echo 'Set up API endpoints for CRUD operations'"
+  ]
+}

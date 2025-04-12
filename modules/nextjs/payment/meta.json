@@ -1,0 +1,20 @@
+{
+  "framework": "nextjs",
+  "description": "Next.js payment module with Stripe",
+  "targetPaths": [
+    {
+      "source": "files/api/stripe.js",
+      "destination": "src/app/api/stripe/route.js"
+    },
+    {
+      "source": "files/lib/stripe.js",
+      "destination": "src/lib/stripe.js"
+    }
+  ],
+  "dependencies": [
+    "stripe"
+  ],
+  "postInstall": [
+    "echo 'Add your Stripe keys to .env.local'"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "framework": "nextjs",
+  "description": "Next.js authentication module with NextAuth",
+  "targetPaths": [
+    {
+      "source": "files/api/route.js",
+      "destination": "src/app/api/auth/[...nextauth]/route.js"
+    },
+    {
+      "source": "files/lib/auth.js",
+      "destination": "src/lib/auth.js"
+    }
+  ],
+  "dependencies": [
+    "next-auth"
+  ],
+  "postInstall": [
+    "echo 'Add your env vars to .env.local'"
+  ]
+}
